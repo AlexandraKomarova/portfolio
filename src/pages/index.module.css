@@ -1,0 +1,78 @@
+p {
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 2s;
+  animation: appear 2s linear forwards;
+  text-align: center;
+}
+
+@keyframes appear {
+	0% { 
+    opacity: 0; 
+  }
+
+  100% { 
+    opacity: 1; 
+  }
+}
+
+.react {
+  animation-delay: 0.7s;
+}
+
+.graphql {
+  animation-delay: 1.4s;
+}
+
+.node {
+  animation-delay: 2.1s;
+}
+
+.mongo {
+  animation-delay: 2.8s;
+}
+
+.mainWrapper {
+  display: grid;
+  grid-template: 1fr / 1fr;
+}
+
+.tech {
+  grid-area: 1 / 1;
+  transition: opacity 1s;
+  animation: tech-disappear 1s linear forwards;
+  animation-delay: 5s;
+}
+
+.photo {
+  opacity: 0;
+  grid-area: 1 / 1;
+  z-index: -1;
+  transition: opacity 3s;
+  animation: photo-appear 3s linear forwards;
+  animation-delay: 6s;
+}
+
+@keyframes photo-appear {
+	0% { 
+    opacity: 0; 
+  }
+
+  100% { 
+    opacity: 1; 
+  }
+
+  /* 100% {
+    opacity: 0;
+  } */
+}
+
+@keyframes tech-disappear {
+	0% { 
+    opacity: 1; 
+  }
+
+  100% { 
+    opacity: 0; 
+  }
+}
