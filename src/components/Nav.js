@@ -6,9 +6,6 @@ const Nav = () => {
   return (
     <nav>
       <p>
-        <Link activeClassName={navStyles.activeNavItem} to='/about'>about</Link>
-      </p>
-      <p>
         <Link activeClassName={navStyles.activeNavItem} to='/work'>work</Link>
       </p>
       <p>
